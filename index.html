@@ -1,115 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
-  <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/style.css">
-  <title>Alex Reniakiewicz</title>
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,600" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/styles.css">
 
-<body>
+    <meta name="keywords" content="Full stack developer, Front end developer, software engineer, web developer, freelance developer, portfolio">
+    <meta name="description" content="">
 
-  <div class="container">
+    <title>Alex Reniakiewicz | Full Stack Developer</title>
 
-    <!--Header -->
-    <header class="header">
-      <img src="./assets/img/avatar-img.jpg" alt="avatar picture" class="header__img">
-      <h1 class="header__main">
-        Alex Reniakiewicz
-      </h1>
-      <h3 class="header__sub">
-        Software Developer
-      </h3>
-    </header>
+    <script src="https://kit.fontawesome.com/18706686bd.js" crossorigin="anonymous"></script>
+    <script defer src="./assets/js/app.js"></script>
+  </head>
 
-    <!-- Navbar -->
-    <nav class="sidebar">
-      <ul class="nav">
-        <li class="nav__item"><a href="#about-section" class="nav__link">About Me</a></li>
-        <li class="nav__item"><a href="#portfolio-section" class="nav__link">Porfolio</a></li>
-        <li class="nav__item"><a href="#contact-section" class="nav__link">Contact</a></li>
-      </ul>
-    </nav>
+  <body>
 
-    <main class="main-content">
-      <!-- About Section -->
-      <section class="about" id="about-section">
-        <h3 class="about__heading">About Me</h3>
-        <p class="about__text">I am a Full-stack developer currently focused on finding a job thay suits both my needs and my employers. My curious nature constantly pushes me to write better code and learn the newest tech. It drives me to look at history and the universe, and everything in between; although it does get me lost in thought occasionally. Besides my eagerness to learn new things, I enjoy physically strenuous activities. Going to the gym helps clear the mind and sharpen it at the same time. It is just one small step that pushes me everyday on a long journey of acquiring strength. However, every journey starts with one step. Let's take one step together, and talk about your dreams.</p>
-      </section>
+        <!-- Navbar -->
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-home"><a href='#' class="navbar-home-item">AR</a></li>
+            <div class="nav-list-container">
+                <li class="navbar-item"><a href="#about" class="navbar-link">About</a></li>
+                <li class="navbar-item"><a href="#projects" class="navbar-link">Projects</a></li>
+                <li class="navbar-item"><a href="#contact" class="navbar-link">Contact</a></li>
+            </div>
+            </ul>
+        </nav>
 
-      <!-- Portfolio Section -->
-      <section class="portfolio" id="portfolio-section">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-container">
+                <h1 class="header-title">ALEX RENIAKIEWICZ</h1>
+                <p class="header-text">Full Stack Developer</p>
+                <div>
+                    <a href="#about" class="header-btn">ABOUT ME</a>
+                    <a href="#contact" class="header-btn">CONTACT</a>
+                </div>
+            </div>
+        </header>
+    
+        <main>
 
-        <!-- Project 1 card -->
-        <div class="project">
-          <img src="./assets/img/dream-catcher-2.png" alt="project 1" class="project__img">
-          <h5 class="project__name">Dream-Catcher</h5>
-          <div class="project__description">
-            <p>App to track your dreams. Easily record your dreams by dictating them and record your time slept and
-              sleep quality. Users can track patterns between sleep quality, time slept and the dreams they had.</p>
-          </div>
-          <a href="https://infinite-plateau-53508.herokuapp.com/" class="project__link">View site</a>
-        </div>
+            <!-- About Section -->
+            <section class="about" id="about">
+                <h1 class="about-title section-heading">About Me</h1>
+                <div class="about-container">
+                    <p class="about-text">Hi! My name is Alex. I'm a web developer experienced with both the front end and back end areas of web development. I'm passionate about writing efficient code and creating scalable applications. In my free time I can be found at the gym or wandering around the internet looking for a new recipe to add to my cooking arsenal.</p>
+                    <div class="tag-container">
+                        <span class="tag tag-html">HTML</span>
+                        <span class="tag tag-css">CSS</span>
+                        <span class="tag tag-javascript">Javascript</span>
+                        <span class="tag tag-react">React</span>
+                        <span class="tag tag-redux">Redux</span>
+                        <span class="tag tag-node">Node</span>
+                        <span class="tag tag-express">Express</span>
+                        <span class="tag tag-mongo">MongoDB</span>
+                        <span class="tag">Responsive Web Design</span>
+                        <span class="tag">REST API</span>
+                    </div>
+                </div>
 
-        <!-- Project 2 card -->
-        <div class="project">
-          <img src="./assets/img/scnvgr-3.png" alt="project 2" class="project__img">
-          <h5 class="project__name">Scvngr</h5>
-          <div class="project__description">
-            <p>Job tracking app that allows users to store any job they have applied to in one location. Helps users
-              stay organized by allowing them to move jobs around depending on the stage they are in the process.</p>
-          </div>
-          <a href="https://scvngr7.herokuapp.com/" class="project__link">View site</a>
-        </div>
+                <div class="resume">
+                    <a href="./assets/imgs/resume_2023.pdf" target="_blank" class="resume-link">Resume</a>
+                </div>
 
-        <div class="resume">
-          <a href="./assets/img/Resume 3_27_19.pdf" class="resume__link">Resume</a>
-        </div>
-      </section>
+            </section>
 
-      <!-- Contact Section -->
-      <section class="contact" id="contact-section">
-        <!-- Contact heading -->
-        <h3 class="contact__heading">Let's get in touch</h3>
-        <!-- Contact form -->
-        <form action="https://formspree.io/alex.reniakiewicz@gmail.com" method="POST" class="contact__form">
-          <input type="text" name="name" id="name" placeholder="Name" class="contact__name" />
-          <input type="email" name="_replyto" id="email" placeholder="Email" class="contact__email" />
-          <textarea name="message" id="message" placeholder="Message" rows="4" class="contact__message"></textarea>
-          <input type="submit" value="Send" class="contact__btn" />
-        </form>
-        <!-- Contact info -->
-        <div class="contact__info">
-          <ul>
-            <li class="contact__info--item"><i class="fas fa-phone"></i> 908-917-4676</li>
-            <li class="contact__info--item"><i class="far fa-envelope"></i><a
-                href="mailto:alex.reniakiewicz@gmail.com">alex.reniakiewicz@gmail.com</a></li>
-          </ul>
-        </div>
-      </section>
-    </main>
+            <!-- Project Section -->
+            <section class="projects" id="projects">
+                <h2 class="project-title section-heading">Projects</h1>
+                <div class="project-container">
 
-    <!-- Footer -->
-    <footer class="footer">
-      <!-- Footer links -->
-      <ul class="footer__nav">
-        <li class="footer__nav--item">
-          <a href="https://www.linkedin.com/in/alex-reniakiewicz/" class="footer__nav--link"><i
-              class="fab fa-linkedin-in"></i></a></li>
-        <li class="footer__nav--item">
-          <a href="https://github.com/AlexReniak" class="footer__nav--link"><i class="fab fa-github"></i></a></li>
-        <li class="footer__nav--item">
-          <a href="mailto:alex.reniakiewicz@gmail.com" class="footer__nav--link"><i class="far fa-envelope"></i></a></li>
-      </ul>
-      <p class="copyright">&copy; Alex Reniakiwicz 2019</p>
-    </footer>
-  </div>
+                    <!-- Project 1 card -->
+                    <div class="project-card project-card-1 hidden">
+                        <div class="project-img-container">
+                            <div class="project-img project-1"></div>
+                        </div>
+                        <h2 class="project-card-title">React Real Estate</h2>
+                        <p class="project-card-text">Full stack web application for buying/selling/renting homes or apartments. Users can browse properties for sale or rent or create an account to post their own properties with pictures, and information about the property.
+                        </p>
+                        <div class="project-stack tag-container">
+                            <span class="tag tag-react">React</span>
+                            <span class="tag tag-redux">Redux</span>
+                            <span class="tag tag-css">CSS</span>
+                            <span class="tag tag-node">Node</span>
+                            <span class="tag tag-express">Express</span>
+                            <span class="tag tag-mongo">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://ar-react-realestate-5735985b13c4.herokuapp.com/" target="_blank" class="link project-link">Website</a>
+                            <a href="https://github.com/AlexReniak/react_realestate_app" target="_blank" class="link project-link">Source code</a>
+                        </div>
+                        
+                    </div>
 
-</body>
+                    <!-- Project 2 card -->
+                    <div class="project-card project-card-2 hidden">
+                        <div class="project-img-container">
+                            <div class="project-img project-2" ></div>
+                        </div>
+                        <h2 class="project-card-title">Support Ticket</h2>
+                        <p class="project-card-text">Application for posting tickets for help with a variety of Apple products. Users can message an admin to assist with finding a resolution for their issue.  
+                        </p>
+                        <div class="project-stack tag-container">
+                            <span class="tag tag-react">React</span>
+                            <span class="tag tag-redux">Redux</span>
+                            <span class="tag tag-css">CSS</span>
+                            <span class="tag tag-node">Node</span>
+                            <span class="tag tag-express">Express</span>
+                            <span class="tag tag-mongo">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://ar-react-support-ticket.herokuapp.com/" target="_blank" class="link project-link">Website</a>
+                            <a href="https://github.com/AlexReniak/support_ticket_app" target="_blank" class="link project-link">Source code</a>
+                        </div>
+                        
+                    </div>
 
-</html>
+                    <!-- Project 3 card -->
+                    <div class="project-card project-card-3 hidden">
+                        <div class="project-img-container">
+                            <div class="project-img project-3"></div>
+                        </div>
+                        <h2 class="project-card-title">Task Manager API</h2>
+                        <p class="project-card-text">Task manager application build with Node using Express and MongoDB. Allows for users to register and authenticate to view, add, update and delete tasks.
+                        </p>
+                        <div class="project-stack tag-container">
+                            <span class="tag tag-node">Node</span>
+                            <span class="tag tag-express">Express</span>
+                            <span class="tag tag-mongo">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/AlexReniak/node_task_manager_api" target="_blank" class="link project-link">Source code</a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="contact" id="contact">
+                <div class="contact-container">
+                    <h2 class="contact-heading section-heading">Contact</h2>
+                    <form class="contact-form" action="https://formspree.io/f/alex.reniakiewicz@gmail.com" method="POST">
+                        <div class="contact-input">
+                            <input type="input" class="form-input" name="name" id="name" required="required" autocomplete="off" />
+                            <span class="form-label">Name</span>
+                        </div>
+                        <div class="contact-input">
+                            <input type="input" class="form-input" name="email" id="email" required="required" autocomplete="off" />
+                            <span class="form-label">Email</span>
+                        </div>
+                        <div class="contact-input">
+                            <textarea class="form-message" id="message" name="message" required="required"></textarea>
+                            <span class="form-label">Message</span>
+                        </div>
+                        <button class="form-btn" type="submit">Submit</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    
+        <!-- Footer -->
+        <footer class="footer">
+            <ul class="footer-list">
+                <li class="footer-item">
+                    <a href="https://github.com/AlexReniak" class="footer-link"><i class="fa-brands fa-github"></i> Github</a>
+                </li>
+                <li class="footer-item">
+                    <a href="https://www.linkedin.com/in/alex-reniakiewicz/" class="footer-link"><i class="fa-brands fa-linkedin"></i> LinkedIn</a>
+                </li>
+            </ul>
+            <p class="copyright">&copy; Alex Reniakiewicz 2023</p>
+        </footer>
+
+
+  </body>
+
+  </html>
